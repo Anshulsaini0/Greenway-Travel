@@ -30,9 +30,10 @@ body{
     top:0;
     background-color: #fff;
     z-index: 100;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .navbar h1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 .navbar #race{
@@ -49,7 +50,7 @@ body{
 }
 .navbar ul a {
      text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     color:#000000a2;
     font-weight: 500; 
@@ -68,7 +69,7 @@ body{
     background-repeat: no-repeat;
     width:100%;
     height: 800px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     padding: 60px 0px;
     display: flex;
     flex-direction: column;
@@ -94,6 +95,7 @@ body{
 .hero_container > p{
     font-size: 4.5rem;
     color:#fff;
+    /* background-color: #fff; */
     font-weight: 800;
     z-index: 10;
     width:70%;
@@ -188,7 +190,11 @@ body{
     align-items: center;
     z-index: 10;
     position: relative;
-    top:-90px;
+    /* top:-90px; */
+    bottom: 25%;
+    background-color: #fff;
+   
+    
 }
 .child_component .box{
     width:18%;
@@ -230,6 +236,7 @@ body{
     width:100%;
     padding: 40px;
     gap: 30px;
+    background-color: #fff;
     /* border: 1px solid orangered; */
     display: flex;
     justify-content: center;
@@ -240,12 +247,16 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     color: #000000a3;
+    background-color: #fff;
+    padding-top: 80px;
+    
 }
 .services p{
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500; 
     color: #000000a3;
+    background-color: #fff;
  
 }
 .services_container .desc p{
@@ -261,9 +272,10 @@ body{
     padding: 60px 40px;
     align-items: center;
     gap: 20px;
-    /* border:1px solid green; */
+    /* border:4px solid green; */
     color: rgba(0, 0, 0, 0.815);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    background-color: #fff;
 }
 
 .ser_childs .icons{
@@ -320,8 +332,9 @@ body{
 
 .exploring{
     width:100%;
-    padding: 40px;
+    padding: 80px;
     gap: 20px;
+    background-color: #fff;
     /* border: 1px solid orangered; */
     display: flex;
     flex-direction: column;
@@ -334,6 +347,7 @@ body{
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
+    /* border: 2px solid red; */
 }
 .exploring p{
     text-align: center;
@@ -342,19 +356,24 @@ body{
 }
 
 .exploring_container{
+    background-color: #fff;
     width: 100%;
     /* height: 300px; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
     padding: 10px;
 } 
 
 .exp_childs{
     width: 30%;
-    border:2px solid green;
+    /* border:2px solid black;   */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.exp_childs:hover{   
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .exp_childs .exp_image{
     width:100%;
@@ -370,16 +389,47 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+.exp_title{
+    font-size: 20px;
+    color: #454242;
+}
 .exp_childs .exp_rating{
    display: flex;
-   justify-content: space-between;
+   justify-content:space-between;
    align-items: center;
+   padding-right: 35px;
+   font-size: 12px;
 }
 
 .exp_rating #exp1{
     background-color: rgb(66, 139, 249);
     color:#fff;
-    padding: 3px 5px;
+    padding: 2px 8px;
+    border-radius: 10%;
+}
+.exp_rating #exp1b {
+    background-color: rgb(1, 153, 1); 
+    color:#fff;
+    padding: 2px 8px;
+    border-radius: 10%;
+}
+.exp_rating #exp1c{
+    background-color:orange;
+    color:#fff;
+    padding: 2px 8px;
+    border-radius: 10%;
+}
+.exp_rating #exp1d{
+    background-color:rgba(167, 5, 167, 0.63);
+    color:#fff;
+    padding: 2px 8px;
+    border-radius: 10%;
+}
+.exp_rating #exp1e{
+    background-color:rgba(235, 66, 5, 0.742);
+    color:#fff;
+    padding: 2px 8px;
+    border-radius: 10%;
 }
 .exp_childs .exp_user{
     width:100%;
@@ -399,12 +449,21 @@ body{
 }
 .exp_user .user_text{
     width:80%;
+    font-size: 13px;
 }
 
 .exp_childs .exp_footer{
      display: flex;
      justify-content: space-between;
      align-items: center;
+}
+.exp_footer .btn3{
+    color: red;
+    font-size: 14px;
+}
+.exp_footer .btn4{
+    color: green;
+    font-size: 14px;
 }
 
 .exp_footer i:hover{
@@ -413,10 +472,10 @@ body{
 
 .exp_footer .exp_icons{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .exp_icons i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .show_rating{
     display: flex;
@@ -431,17 +490,25 @@ body{
     font-size: 1.2rem;
     color: #fff;
     background-color: red;
-    padding: 3px 5px;
+    padding: 3px 12px;
+    border-radius: 8%;
 }
 .show_icons{
     background-color: black;
     display: flex;
-    gap:10px;
+    gap:20px;
     padding: 5px 8px;
 }
-#exp2{
+
+#exp3{
     border-right: 1px solid black;
+    border-left: 1px solid black ;
     padding-right: 10px;
+    padding-left: 10px;
+}
+.exp_footer{
+    border-top: 1px solid black;
+    padding-top: 20px;
 }
 .show_icons i{
     font-size: 1.2rem;
@@ -452,3 +519,230 @@ body{
 }
 
 /* explore section css end */
+
+/* review section css start */
+
+
+
+
+
+
+
+.review{
+    width:100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    
+
+}
+.review h5{
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.review p{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight:400;
+
+}
+
+
+
+
+.review_container{
+    width:100%;
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    margin-bottom:50px ;
+}
+
+.review_container .review_child{
+    width:30%;
+    /* border:1px solid blue; */
+    /* height: 100%; */
+    padding: 30px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.review_child .review_user{
+    display: flex;
+    gap: 20px;
+    /* line-height: 20px; */
+    font-weight: 500 ;
+    font-size: 12px;
+}
+.review_child .user_logo{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+
+.user_logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.review_content > p{
+    font-size: 15px;
+    padding-top: 10px;
+    
+    
+}
+
+
+.container{
+    width:100%;
+    height: 100vh;
+    /* border:2px solid black; */
+    background-image: url(./first.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: -10000;
+    
+    
+
+}
+
+
+.visitors{
+    width:100%;
+    /* border:1px solid greenyellow; */
+    color:#fff;
+    padding: 100px 0px;
+    background-color: rgba(0, 0, 0, 0.388);
+}
+.visitors .visitor_count{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.visitor_count .info {
+    font-size: 4.9rem;
+    font-weight: 600;
+}
+.visitor_count .info2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+/* review section css end */
+
+
+/* contact section css start */
+
+.contact{
+    padding: 70px 0px;
+    /* border: 5px solid red; */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h5 {
+    font-size: 2.3rem;
+    padding-top: 20px;
+}
+.contact p{
+    font-size: 1.5rem;
+    padding-top: 20px ;
+}
+    
+
+.account{
+    /* border: 2px solid rgb(38, 0, 255); */
+    background-color: #fff;
+    width: 50%;
+    margin-top: 30px;
+    padding-left:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.account:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.account input{
+    width:80%;  
+    border: none;
+    outline:none;
+}
+
+
+.btn5{
+    /* border:3px solid green; */
+    width: 30%;
+    padding: 15px 0px;
+    background-color: rgba(255, 0, 0, 0.687);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+.btn5 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* contact section css end */
+
+/* footer section css start */
+.footer{
+    /* border:2px solid red; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 3px solid black;
+    z-index: 100;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.footer #race{
+    color: red;
+}
+.footer ul{
+    display: flex;
+    width:50%;
+    gap: 15px;
+    justify-content: space-between;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer ul a {
+     text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color:#000000a2;
+    font-weight: 500; 
+}
+
+
+/* footer section css end */
